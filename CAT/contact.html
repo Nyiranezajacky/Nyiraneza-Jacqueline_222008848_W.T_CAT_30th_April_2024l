@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Farmers Market</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Settings</a>
+                    <div class="dropdown-content">
+                        <a href="login.php">Sign Up</a>
+                        <a href="login.php">Sign In</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  <h3>phone: +3420798543787</h3>
+  <h3>email: marketingmobile@yahoo.net</h3>
+
+  <section class="contact-section">
+    <h2>Get in Touch</h2>
+    <form action="#" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Farmers Market</p>
+  </footer>
+</body>
+</html>
+
+<style type="text/css">
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+</style>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+  const contactForm = document.getElementById('contactForm');
+  const confirmationMessage = document.getElementById('confirmationMessage');
+  
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    
+    // Send form data to server (you would replace this with actual backend code)
+    // For demonstration purposes, we'll just show a confirmation message
+    confirmationMessage.style.display = 'block';
+    contactForm.reset(); // Clear form fields
+  });
+});
+
+</script>
